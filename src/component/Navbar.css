@@ -1,0 +1,61 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #111;
+  color: white;
+}
+
+/* Logo */
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Nav Links container */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* Box style for each nav item */
+.nav-box {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #222;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+/* Hover Effect */
+.nav-box:hover {
+  background: #4facfe;
+  transform: translateY(-2px);
+}
+
+/* Active Route Highlight */
+.nav-box.active {
+  background: #4facfe;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Cart Box Special */
+.cart-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Cart Badge */
+.cart-badge {
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 50%;
+}

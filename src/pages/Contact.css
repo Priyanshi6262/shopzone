@@ -1,0 +1,99 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  padding: 20px;
+}
+
+.contact-card {
+  background: white;
+  padding: 40px;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.contact-card h2 {
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  color: gray;
+  margin-bottom: 25px;
+}
+
+/* Floating Input Style */
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.input-group label {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  background: white;
+  padding: 0 5px;
+  color: gray;
+  font-size: 14px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #4facfe;
+}
+
+.input-group input:focus + label,
+.input-group textarea:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 8px;
+  font-size: 12px;
+  color: #4facfe;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #4facfe;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #007bff;
+  transform: translateY(-2px);
+}
+
+/* Success Message */
+.success-message {
+  background: #d4edda;
+  color: #155724;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  font-size: 14px;
+}
